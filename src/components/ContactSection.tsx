@@ -231,14 +231,23 @@ const ContactSection = () => {
                       <SelectValue placeholder="Sélectionnez" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="construction">
-                        Construction neuve
-                      </SelectItem>
-                      <SelectItem value="renovation">Rénovation</SelectItem>
-                      <SelectItem value="amenagement">
-                        Aménagement / Second œuvre
-                      </SelectItem>
-                      <SelectItem value="autre">Autre</SelectItem>
+                      <SelectItem value="construction">Construction neuve</SelectItem>
+                      <SelectItem value="renovation-complete">Rénovation complète</SelectItem>
+                      <SelectItem value="renovation-partielle">Rénovation partielle</SelectItem>
+                      <SelectItem value="extension">Extension / Agrandissement</SelectItem>
+                      <SelectItem value="amenagement-combles">Aménagement de combles</SelectItem>
+                      <SelectItem value="amenagement-interieur">Aménagement intérieur</SelectItem>
+                      <SelectItem value="salle-de-bain">Salle de bain / Sanitaires</SelectItem>
+                      <SelectItem value="cuisine">Cuisine</SelectItem>
+                      <SelectItem value="cloisons-plafonds">Cloisons / Faux plafonds</SelectItem>
+                      <SelectItem value="isolation">Isolation thermique / acoustique</SelectItem>
+                      <SelectItem value="peinture-finitions">Peinture / Finitions</SelectItem>
+                      <SelectItem value="carrelage-revetement">Carrelage / Revêtement sols</SelectItem>
+                      <SelectItem value="electricite">Électricité</SelectItem>
+                      <SelectItem value="plomberie">Plomberie</SelectItem>
+                      <SelectItem value="menuiserie">Menuiserie intérieure</SelectItem>
+                      <SelectItem value="local-commercial">Local commercial / Bureau</SelectItem>
+                      <SelectItem value="autre">Autre projet</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

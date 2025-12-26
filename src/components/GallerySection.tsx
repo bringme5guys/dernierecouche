@@ -53,7 +53,7 @@ const GallerySection = () => {
             Nos réalisations
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">
-            Avant / Après : la différence Finalis
+            Avant / Après : la différence Dernière Couche
           </h2>
           <p className="text-muted-foreground text-lg">
             Découvrez la transformation de nos chantiers. Chaque intervention

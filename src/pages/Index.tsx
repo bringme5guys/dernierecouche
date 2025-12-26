@@ -16,28 +16,27 @@ const Index = () => {
     <>
       <Helmet>
         <title>
-          Nettoyage de fin de chantier à Lille | Finalis - Nettoyage
+          Nettoyage de fin de chantier à Lille | Dernière Couche - Nettoyage
           professionnel
         </title>
         <meta
           name="description"
-          content="Finalis, entreprise spécialisée en nettoyage de fin de chantier à Lille et métropole lilloise. Nettoyage après travaux pour professionnels et particuliers. Devis gratuit."
+          content="Dernière Couche, entreprise spécialisée en nettoyage de fin de chantier à Lille et métropole lilloise. Nettoyage après travaux pour professionnels et particuliers. Devis gratuit."
         />
         <meta
           name="keywords"
-          content="nettoyage fin de chantier Lille, nettoyage chantier Lille, nettoyage après travaux, entreprise nettoyage chantier Nord, nettoyage post-construction"
+          content="nettoyage fin de chantier Lille, nettoyage après travaux, entreprise nettoyage chantier Nord, nettoyage professionnel Lille"
         />
-        <meta name="robots" content="index, follow" />
         <meta
           property="og:title"
-          content="Finalis - Nettoyage professionnel de fin de chantier à Lille"
+          content="Dernière Couche - Nettoyage professionnel de fin de chantier à Lille"
         />
         <meta
           property="og:description"
-          content="Spécialiste du nettoyage de fin de chantier à Lille. Livrez vos chantiers impeccables avec Finalis."
+          content="Spécialiste du nettoyage de fin de chantier à Lille. Livrez vos chantiers impeccables avec Dernière Couche."
         />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://finalis.fr" />
+        <link rel="canonical" href="https://dernierecouche.fr" />
       </Helmet>
 
       <div className="min-h-screen">

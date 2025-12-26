@@ -40,7 +40,7 @@ const WhyUsSection = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-1.5 bg-white/10 text-white/90 text-sm font-medium rounded-full mb-4">
-            Pourquoi Finalis
+            Pourquoi Dernière Couche
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
             La garantie d'un travail bien fait

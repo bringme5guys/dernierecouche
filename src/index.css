@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* Finalis Brand Colors - Professional Navy & Charcoal */
+    /* Dernière Couche Brand Colors - Professional Navy & Charcoal */
     --background: 210 20% 98%;
     --foreground: 215 25% 15%;
     
@@ -37,7 +37,7 @@
     
     --radius: 0.5rem;
     
-    /* Custom Finalis tokens */
+    /* Custom Dernière Couche tokens */
     --navy: 210 50% 25%;
     --navy-light: 210 45% 35%;
     --charcoal: 215 20% 20%;
@@ -84,7 +84,7 @@
     --input: 215 20% 20%;
     --ring: 195 70% 50%;
 
-    /* Custom Finalis tokens - dark mode */
+    /* Custom Dernière Couche tokens - dark mode */
     --navy: 210 50% 25%;
     --navy-light: 210 45% 35%;
     --charcoal: 215 20% 20%;

@@ -32,7 +32,7 @@ const Header = () => {
             className="flex items-center gap-2"
           >
             <span className="text-2xl md:text-3xl font-display font-bold text-primary">
-              Finalis
+              Dernière Couche
             </span>
           </button>
 

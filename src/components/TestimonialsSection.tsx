@@ -7,7 +7,7 @@ const testimonials = [
     role: "Entrepreneur en bâtiment",
     company: "BTP Lillois",
     content:
-      "Finalis intervient sur tous nos chantiers depuis 2 ans. Travail impeccable, équipes ponctuelles et professionnelles. Je recommande vivement.",
+      "Dernière Couche intervient sur tous nos chantiers depuis 2 ans. Travail impeccable, équipes ponctuelles et professionnelles. Je recommande vivement.",
     rating: 5,
   },
   {
@@ -15,7 +15,7 @@ const testimonials = [
     role: "Particulière",
     location: "Villeneuve-d'Ascq",
     content:
-      "Après la rénovation complète de notre maison, Finalis a fait un travail remarquable. Plus une trace de poussière, tout était parfait pour notre emménagement.",
+      "Après la rénovation complète de notre maison, Dernière Couche a fait un travail remarquable. Plus une trace de poussière, tout était parfait pour notre emménagement.",
     rating: 5,
   },
   {
@@ -31,7 +31,7 @@ const testimonials = [
     role: "Architecte d'intérieur",
     company: "Studio SR Design",
     content:
-      "Je fais appel à Finalis pour tous mes projets de rénovation. Leur attention au détail est remarquable et mes clients sont toujours satisfaits du résultat final.",
+      "Je fais appel à Dernière Couche pour tous mes projets de rénovation. Leur attention au détail est remarquable et mes clients sont toujours satisfaits du résultat final.",
     rating: 5,
   },
 ];

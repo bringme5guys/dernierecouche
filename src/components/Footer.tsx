@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-display font-bold mb-4">Finalis</h3>
+            <h3 className="text-2xl font-display font-bold mb-4">Dernière Couche</h3>
             <p className="text-white/70 mb-6 max-w-md">
               Spécialiste du nettoyage de fin de chantier à Lille et dans toute
               la métropole lilloise. Professionnalisme, rigueur et satisfaction
@@ -31,11 +31,11 @@ const Footer = () => {
                 <span>03 00 00 00 00</span>
               </a>
               <a
-                href="mailto:contact@finalis.fr"
+                href="mailto:contact@dernierecouche.fr"
                 className="flex items-center gap-3 text-white/70 hover:text-white transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                <span>contact@finalis.fr</span>
+                <span>contact@dernierecouche.fr</span>
               </a>
               <div className="flex items-center gap-3 text-white/70">
                 <MapPin className="w-4 h-4" />
@@ -86,7 +86,7 @@ const Footer = () => {
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/50 text-sm">
-              © {currentYear} Finalis. Tous droits réservés.
+              © {currentYear} Dernière Couche. Tous droits réservés.
             </p>
             <div className="flex gap-6 text-sm">
               <button className="text-white/50 hover:text-white transition-colors">

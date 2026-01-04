@@ -1,24 +1,32 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import villeneuveAvant from "@/assets/villeneuve-avant.png";
+import villeneuveApres from "@/assets/villeneuve-apres.png";
 
 const galleryItems = [
   {
     id: 1,
+    beforeImage: villeneuveAvant,
+    afterImage: villeneuveApres,
     beforeLabel: "Avant",
     afterLabel: "Après",
-    title: "Appartement neuf - Lille Centre",
-    description: "Nettoyage complet après rénovation totale",
+    title: "Appartement - Villeneuve-d'Ascq",
+    description: "Rénovation complète avec pose de parquet et finitions",
   },
   {
     id: 2,
+    beforeImage: null,
+    afterImage: null,
     beforeLabel: "Avant",
     afterLabel: "Après",
-    title: "Maison individuelle - Villeneuve-d'Ascq",
+    title: "Maison individuelle - Lille",
     description: "Fin de chantier construction neuve",
   },
   {
     id: 3,
+    beforeImage: null,
+    afterImage: null,
     beforeLabel: "Avant",
     afterLabel: "Après",
     title: "Bureaux - Roubaix",
@@ -66,35 +74,53 @@ const GallerySection = () => {
           <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-charcoal">
             {/* Before/After Comparison */}
             <div className="relative aspect-[16/10]">
-              {/* Before Image (placeholder) */}
-              <div className="absolute inset-0 bg-gradient-to-br from-slate/80 to-charcoal flex items-center justify-center">
-                <div className="text-center text-white/60">
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/10 flex items-center justify-center">
-                    <span className="text-4xl">🏗️</span>
+              {/* Before Image */}
+              {currentItem.beforeImage ? (
+                <img
+                  src={currentItem.beforeImage}
+                  alt={`${currentItem.title} - Avant`}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              ) : (
+                <div className="absolute inset-0 bg-gradient-to-br from-slate/80 to-charcoal flex items-center justify-center">
+                  <div className="text-center text-white/60">
+                    <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/10 flex items-center justify-center">
+                      <span className="text-4xl">🏗️</span>
+                    </div>
+                    <p className="text-lg font-medium">Photo avant travaux</p>
+                    <p className="text-sm opacity-60 mt-1">
+                      (Ajoutez vos propres photos)
+                    </p>
                   </div>
-                  <p className="text-lg font-medium">Photo avant travaux</p>
-                  <p className="text-sm opacity-60 mt-1">
-                    (Ajoutez vos propres photos)
-                  </p>
                 </div>
-              </div>
+              )}
 
-              {/* After Image (placeholder) */}
+              {/* After Image */}
               <div
-                className="absolute inset-0 bg-gradient-to-br from-teal/20 to-primary/30 flex items-center justify-center"
+                className="absolute inset-0"
                 style={{
                   clipPath: `inset(0 0 0 ${sliderPosition}%)`,
                 }}
               >
-                <div className="text-center text-white">
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
-                    <span className="text-4xl">✨</span>
+                {currentItem.afterImage ? (
+                  <img
+                    src={currentItem.afterImage}
+                    alt={`${currentItem.title} - Après`}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-gradient-to-br from-teal/20 to-primary/30 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
+                        <span className="text-4xl">✨</span>
+                      </div>
+                      <p className="text-lg font-medium">Photo après nettoyage</p>
+                      <p className="text-sm opacity-60 mt-1">
+                        (Ajoutez vos propres photos)
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-lg font-medium">Photo après nettoyage</p>
-                  <p className="text-sm opacity-60 mt-1">
-                    (Ajoutez vos propres photos)
-                  </p>
-                </div>
+                )}
               </div>
 
               {/* Slider Control */}

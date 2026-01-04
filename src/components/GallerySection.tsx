@@ -7,6 +7,8 @@ import bonduesAvant from "@/assets/bondues-avant.png";
 import bonduesApres from "@/assets/bondues-apres.png";
 import insalubreAvant from "@/assets/insalubre-avant.png";
 import insalubreApres from "@/assets/insalubre-apres.png";
+import inondationAvant from "@/assets/inondation-avant.png";
+import inondationApres from "@/assets/inondation-apres.png";
 
 const galleryItems = [
   {
@@ -35,6 +37,15 @@ const galleryItems = [
     afterLabel: "Après",
     title: "Logement insalubre - Métropole lilloise",
     description: "Débarras complet et remise en état du logement",
+  },
+  {
+    id: 4,
+    beforeImage: inondationAvant,
+    afterImage: inondationApres,
+    beforeLabel: "Avant",
+    afterLabel: "Après",
+    title: "Cave inondée - Métropole lilloise",
+    description: "Pompage, nettoyage et remise en état après inondation",
   },
 ];
 

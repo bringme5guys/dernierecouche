@@ -3,6 +3,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import villeneuveAvant from "@/assets/villeneuve-avant.png";
 import villeneuveApres from "@/assets/villeneuve-apres.png";
+import bonduesAvant from "@/assets/bondues-avant.png";
+import bonduesApres from "@/assets/bondues-apres.png";
 
 const galleryItems = [
   {
@@ -16,12 +18,12 @@ const galleryItems = [
   },
   {
     id: 2,
-    beforeImage: null,
-    afterImage: null,
+    beforeImage: bonduesAvant,
+    afterImage: bonduesApres,
     beforeLabel: "Avant",
     afterLabel: "Après",
-    title: "Maison individuelle - Lille",
-    description: "Fin de chantier construction neuve",
+    title: "Maison individuelle - Bondues",
+    description: "Levée d'encombrants et nettoyage extérieur",
   },
   {
     id: 3,

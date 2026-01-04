@@ -5,6 +5,8 @@ import villeneuveAvant from "@/assets/villeneuve-avant.png";
 import villeneuveApres from "@/assets/villeneuve-apres.png";
 import bonduesAvant from "@/assets/bondues-avant.png";
 import bonduesApres from "@/assets/bondues-apres.png";
+import insalubreAvant from "@/assets/insalubre-avant.png";
+import insalubreApres from "@/assets/insalubre-apres.png";
 
 const galleryItems = [
   {
@@ -27,12 +29,12 @@ const galleryItems = [
   },
   {
     id: 3,
-    beforeImage: null,
-    afterImage: null,
+    beforeImage: insalubreAvant,
+    afterImage: insalubreApres,
     beforeLabel: "Avant",
     afterLabel: "Après",
-    title: "Bureaux - Roubaix",
-    description: "Nettoyage après travaux d'aménagement",
+    title: "Logement insalubre - Métropole lilloise",
+    description: "Débarras complet et remise en état du logement",
   },
 ];
 

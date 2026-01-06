@@ -221,12 +221,18 @@ const handler = async (req: Request): Promise<Response> => {
       }
     );
   } catch (error: any) {
-    // Avoid logging raw PII; keep logs minimal
-    console.error("Error in send-quote-notification function:", error?.message ?? error);
-    return new Response(JSON.stringify({ error: "Erreur lors de l'envoi" }), {
-      status: 500,
-      headers: { "Content-Type": "application/json", ...corsHeaders },
-    });
+    // Log detailed error server-side only
+    console.error("Error in send-quote-notification function:", error);
+    // Return generic error message to client
+    return new Response(
+      JSON.stringify({ 
+        error: "Une erreur est survenue. Veuillez réessayer ou nous contacter directement." 
+      }), 
+      {
+        status: 500,
+        headers: { "Content-Type": "application/json", ...corsHeaders },
+      }
+    );
   }
 };
 

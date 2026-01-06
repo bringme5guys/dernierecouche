@@ -84,7 +84,7 @@ const HeroSection = () => {
               size="lg"
               variant="outline"
               onClick={scrollToServices}
-              className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg"
+              className="bg-white text-navy border-white hover:bg-white/90 px-8 py-6 text-lg"
             >
               Découvrir nos services
             </Button>

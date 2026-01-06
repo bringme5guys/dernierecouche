@@ -32,10 +32,11 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      // Save to database
+      // Save to database (only fetch minimal response)
       const { error: dbError } = await supabase
         .from("quote_requests")
-        .insert([formData]);
+        .insert([formData])
+        .select("id");
 
       if (dbError) throw dbError;
 

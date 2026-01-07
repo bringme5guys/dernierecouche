@@ -21,7 +21,7 @@ const testimonials = [
   {
     name: "Thomas L.",
     role: "Directeur de programmes",
-    company: "Nexity Nord",
+    company: "Bailleur Social",
     content:
       "Des professionnels sérieux qui comprennent nos contraintes de délais. La qualité de leur prestation nous permet de livrer nos acquéreurs dans les meilleures conditions.",
     rating: 5,

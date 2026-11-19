@@ -1,73 +1,70 @@
-# Welcome to your Lovable project
+# Finalis: Delivery Ready Clean
 
-## Project info
+Create a professional brand and website for a company called "Finalis".
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Finalis is a professional cleaning company specialized exclusively in end-of-construction and post-renovation cleaning ("nettoyage de fin de chantier").
 
-## How can I edit this code?
+Context:
+- Location: Lille metropolitan area (France)
+- Target clients: 
+  - Construction professionals (artisans, contractors, renovation companies, property developers)
+  - Private individuals after renovation or construction work
+- Positioning: reliable, rigorous, professional, no-frills, delivery-ready cleanliness
+- Promise: make the site or property perfectly clean and ready to be delivered or lived in
 
-There are several ways of editing your application.
+Brand identity:
+- Name: Finalis
+- Tone: professional, reassuring, serious, efficient
+- No cheap or low-cost positioning
+- Modern but sober visual identity
+- Colors: neutral and professional (white, dark blue, charcoal, light grey)
+- Typography: clean, professional, readable
 
-**Use Lovable**
+Website requirements:
+- Homepage focused on conversion and trust
+- Clear value proposition above the fold
+- Highlight specialization: “Nettoyage de fin de chantier”
+- Sections to include:
+  1. Hero section with strong headline and subtitle
+  2. Services offered (end of construction cleaning, dust removal, floors, windows, sanitization)
+  3. Who the service is for (professionals & individuals)
+  4. Why choose Finalis (reliability, deadlines respected, professional equipment)
+  5. Geographic coverage (Lille and surrounding cities)
+  6. Call-to-action: request a quote
+  7. Contact section
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Suggested slogan ideas:
+- “Finalis – La dernière étape avant livraison”
+- “Finalis – Votre chantier, prêt à livrer”
+- “Finalis – Nettoyage professionnel de fin de chantier”
 
-Changes made via Lovable will be committed automatically to this repo.
+SEO requirements:
+- Primary keyword: nettoyage de fin de chantier Lille
+- Secondary keywords: nettoyage chantier Lille, nettoyage après travaux, entreprise nettoyage chantier Nord
+- Local SEO optimized content
+- Clear H1, H2 structure
 
-**Use your preferred IDE**
+The output should look like a real, professional service company ready to operate.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+This project was built with [Lovable](https://lovable.dev).
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**Live app**: https://dernierecouche.lovable.app
 
-Follow these steps:
+## Build with Lovable
+
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/2126d8f2-b705-42f8-910e-7eea97dd84dd).
+
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+
+## Development
+
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
+git clone <this-repository-url>
+cd <repository-name>
 npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

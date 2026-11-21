@@ -57,11 +57,11 @@ vitrerie, sortie de containers.
 /mentions-legales  /politique-de-confidentialite
 ```
 
-Pages locales : **une seule au départ**, `/nettoyage-fin-de-chantier-lille`,
-avec du contenu réellement différent (chantiers locaux, délais, communes
-desservies). On n'en ajoute une autre que quand elle a de la matière propre.
-Décliner mécaniquement cinq services par quinze communes fabriquerait
-soixante-quinze pages vides que Google traite en pages satellites.
+Pages locales : voir [couverture-nord.md](couverture-nord.md). En résumé,
+**deux pages seulement au départ** — Lille et Dunkerque, les deux seuls
+bassins à volume réel — plus une page « zone d'intervention » qui nomme les
+bassins du département. Le croisement service × ville n'a aucune demande
+mesurable hors Lille : le décliner fabriquerait des pages satellites.
 
 ## Blocage technique à lever avant d'écrire
 

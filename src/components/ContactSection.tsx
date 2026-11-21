@@ -33,11 +33,13 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      // Save to database (only fetch minimal response)
+      // Enregistrement en base.
+      // Pas de .select() ici : la policy SELECT de quote_requests est
+      // réservée aux admins, donc relire la ligne insérée ferait échouer
+      // l'insertion entière pour un visiteur anonyme (Postgres 42501).
       const { error: dbError } = await supabase
         .from("quote_requests")
-        .insert([formData])
-        .select("id");
+        .insert([formData]);
 
       if (dbError) throw dbError;
 

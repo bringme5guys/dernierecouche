@@ -86,3 +86,59 @@ professionnel », « nettoyage professionnel lille », « débarras insalubre »
 5. Les photos d'inondation et d'insalubre déjà présentes dans la galerie
    montrent que le métier complexe est déjà exercé. C'est le mieux
    rémunéré du lot, et le site actuel n'en dit pas un mot.
+
+---
+
+# Métiers et services adjacents
+
+Même source et même méthode.
+
+## Le gisement principal : la lutte antiparasitaire (3D)
+
+| Mot-clé | Volume | CPC | Concurrence |
+| --- | ---: | ---: | ---: |
+| dératisation | 12 100 | 4,93 € | 63 |
+| désinsectisation | 2 400 | 2,27 € | 52 |
+
+Le plus gros volume de tout le relevé, devant « entreprise de nettoyage ».
+Complément naturel du syndic et de l'insalubre : ce sont les mêmes clients
+et souvent le même chantier. Contrainte réelle : le Certibiocide est
+obligatoire pour l'usage professionnel de biocides.
+
+## Les compléments à forte valeur
+
+| Mot-clé | Volume | CPC | Concurrence |
+| --- | ---: | ---: | ---: |
+| hydrocurage | 2 400 | 7,62 € | 48 |
+| nettoyage parking | 140 | 10,46 € | 49 |
+| nettoyage fin de bail | 70 | 5,04 € | 45 |
+| location benne chantier | 110 | 4,66 € | 54 |
+| nettoyage gaines de ventilation | 70 | 2,20 € | 77 |
+
+Hydrocurage et parking servent les mêmes donneurs d'ordre que le syndic et
+l'industriel. Le parking affiche le deuxième CPC du relevé complet.
+
+## Les pièges : gros volume, faible valeur
+
+| Mot-clé | Volume | CPC | Concurrence |
+| --- | ---: | ---: | ---: |
+| démoussage toiture | 8 100 | 4,62 € | 100 |
+| nettoyage façade | 4 400 | 1,26 € | 100 |
+| nettoyage panneaux solaires | 4 400 | 1,57 € | 100 |
+| entretien espaces verts | 3 600 | 1,07 € | 44 |
+| nettoyage haute pression | 880 | 0,41 € | 100 |
+| décapage sol | 390 | 0,22 € | 100 |
+| cristallisation marbre | 390 | 1,37 € | 100 |
+
+Volumes élevés, concurrence saturée, CPC au plancher : marchés de
+particuliers, pas de donneurs d'ordre professionnels. « Haute pression »
+et « décapage » sont des techniques recherchées pour s'informer, pas des
+prestations qu'on achète. À traiter comme arguments dans une page, jamais
+comme pages de service.
+
+## Trop étroits pour une page dédiée
+
+remise en état des lieux (10), nettoyage cage escalier (10), évacuation
+déchets chantier (30), désinfection locaux (70 mais CPC 0,04 €), sortie de
+containers (aucun volume mesurable). Ce sont des arguments de page, pas des
+pages.

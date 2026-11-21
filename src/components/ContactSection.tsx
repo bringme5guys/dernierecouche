@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
+import { site } from "@/config/site";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -117,7 +118,7 @@ const ContactSection = () => {
               </h3>
               <div className="space-y-4">
                 <a
-                  href="tel:+33000000000"
+                  href={site.phone.href}
                   className="flex items-start gap-4 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors"
                 >
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -125,12 +126,12 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Téléphone</p>
-                    <p className="text-muted-foreground">03 00 00 00 00</p>
+                    <p className="text-muted-foreground">{site.phone.display}</p>
                   </div>
                 </a>
 
                 <a
-                  href="mailto:contact@dernierecouche.fr"
+                  href={`mailto:${site.email}`}
                   className="flex items-start gap-4 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors"
                 >
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -138,7 +139,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Email</p>
-                    <p className="text-muted-foreground">contact@dernierecouche.fr</p>
+                    <p className="text-muted-foreground">{site.email}</p>
                   </div>
                 </a>
 

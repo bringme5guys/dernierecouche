@@ -26,3 +26,4 @@ dist-ssr
 # secrets locaux, jamais versionnés
 .secrets/
 supabase/.temp/
+.vercel

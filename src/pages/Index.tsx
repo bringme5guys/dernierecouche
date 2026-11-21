@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { site, localBusinessJsonLd } from "@/config/site";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -15,28 +16,20 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>
-          Nettoyage de fin de chantier à Lille | Dernière Couche - Nettoyage
-          professionnel
-        </title>
-        <meta
-          name="description"
-          content="Dernière Couche, entreprise spécialisée en nettoyage de fin de chantier à Lille et métropole lilloise. Nettoyage après travaux pour professionnels et particuliers. Devis gratuit."
-        />
-        <meta
-          name="keywords"
-          content="nettoyage fin de chantier Lille, nettoyage après travaux, entreprise nettoyage chantier Nord, nettoyage professionnel Lille"
-        />
+        <title>Nettoyage de fin de chantier à Lille | {site.name}</title>
+        <meta name="description" content={site.description} />
+        <link rel="canonical" href={`${site.url}/`} />
         <meta
           property="og:title"
-          content="Dernière Couche - Nettoyage professionnel de fin de chantier à Lille"
+          content={`Nettoyage de fin de chantier à Lille | ${site.name}`}
         />
-        <meta
-          property="og:description"
-          content="Spécialiste du nettoyage de fin de chantier à Lille. Livrez vos chantiers impeccables avec Dernière Couche."
-        />
+        <meta property="og:description" content={site.description} />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://dernierecouche.fr" />
+        <meta property="og:url" content={`${site.url}/`} />
+        <meta property="og:image" content={`${site.url}/og-image.jpg`} />
+        <script type="application/ld+json">
+          {JSON.stringify(localBusinessJsonLd)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen">

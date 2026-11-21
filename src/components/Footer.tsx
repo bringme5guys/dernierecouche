@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import { site } from "@/config/site";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -24,18 +25,18 @@ const Footer = () => {
             </p>
             <div className="space-y-3">
               <a
-                href="tel:+33000000000"
+                href={site.phone.href}
                 className="flex items-center gap-3 text-white/70 hover:text-white transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                <span>03 00 00 00 00</span>
+                <span>{site.phone.display}</span>
               </a>
               <a
-                href="mailto:contact@dernierecouche.fr"
+                href={`mailto:${site.email}`}
                 className="flex items-center gap-3 text-white/70 hover:text-white transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                <span>contact@dernierecouche.fr</span>
+                <span>{site.email}</span>
               </a>
               <div className="flex items-center gap-3 text-white/70">
                 <MapPin className="w-4 h-4" />

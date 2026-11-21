@@ -61,6 +61,20 @@ GitHub. Une fois le DNS propagé, GitHub émet automatiquement le certificat
 Let's Encrypt ; cocher ensuite « Enforce HTTPS » dans les réglages Pages du
 dépôt.
 
+## À ne pas casser en modifiant la zone
+
+Le domaine porte un enregistrement TXT `v=spf1 -all`. Il déclare qu'aucun
+serveur n'est autorisé à envoyer du courrier au nom du domaine, ce qui le
+protège contre l'usurpation. **Le conserver tel quel.** Il devra être
+modifié, et non supprimé, le jour où une adresse `@dernierecouche.com`
+enverra réellement des emails.
+
+Le TTL de l'enregistrement A est de 3600 secondes : compter jusqu'à une
+heure de propagation après la bascule.
+
+Il n'existe aucun enregistrement pour `www` aujourd'hui : le CNAME est à
+créer.
+
 ## Ce qui reste à la main de l'utilisateur
 
 1. **Couper la synchronisation GitHub dans Lovable.** Son bot

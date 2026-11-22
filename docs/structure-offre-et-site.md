@@ -63,17 +63,26 @@ bassins à volume réel — plus une page « zone d'intervention » qui nomme le
 bassins du département. Le croisement service × ville n'a aucune demande
 mesurable hors Lille : le décliner fabriquerait des pages satellites.
 
-## Blocage technique à lever avant d'écrire
+## Le prérendu, fait
 
-Le site est une application monopage rendue côté client : le référencement
-passe par Helmet, qui s'exécute après le chargement du JavaScript. Tant que
-c'est le cas, toutes les URL ci-dessus servent le même `index.html` vide, et
-les aperçus de partage comme une partie des robots ne voient rien.
+Le site était rendu entièrement côté client : chaque URL servait la même
+coquille vide et tout le référencement dépendait du JavaScript. C'est levé.
 
-Il faut prérendre les pages au build, chaque URL devant servir son propre
-HTML complet. `vite-react-ssg` le fait sans changer de framework et sans
-toucher aux composants existants. C'est le préalable à tout le reste : écrire
-dix pages sur l'architecture actuelle reviendrait à les écrire pour personne.
+Le build passe par `vite-react-ssg` et écrit un fichier HTML complet par
+route. L'accueil fait désormais 79 Ko de contenu réel, données structurées
+comprises, au lieu de 2 Ko de div vide.
+
+Pour ajouter une page, deux gestes :
+
+1. créer le composant dans `src/pages/`, avec un `<Seo … />` en tête ;
+2. déclarer sa route dans [`src/routes.tsx`](../src/routes.tsx).
+
+Le build la prérendra automatiquement. Les métadonnées passent toutes par
+[`src/components/Seo.tsx`](../src/components/Seo.tsx) : titre, description,
+canonical, Open Graph, Twitter et données structurées, en un seul endroit.
+
+Ne jamais remettre de titre ou de description dans `index.html` : ils
+feraient doublon avec ceux de la page.
 
 ## Plan de blog
 

@@ -16,50 +16,28 @@ Le mot de passe de la base reste dans `.secrets/`, ignoré par git.
 
 ## État du DNS
 
-Le domaine est délégué à Google Cloud DNS :
+La bascule a été faite le 22 novembre 2026 dans Squarespace, qui gère la
+zone (les serveurs de noms `ns-cloud-*.googledomains.com` sont son
+infrastructure héritée de Google Domains).
+
+L'enregistrement A vers Lovable était enfermé dans un préréglage
+« Domain Connect to Entri » posé par Lovable, non modifiable : il a fallu
+supprimer le préréglage entier, ce qui a retiré au passage le jeton
+`TXT _lovable`. Le jeton `TXT _lovable.www` et l'ancien `A www` ont été
+supprimés eux aussi.
+
+Zone actuelle, enregistrements personnalisés :
 
 ```
-ns-cloud-b1.googledomains.com
-ns-cloud-b2.googledomains.com
-ns-cloud-b3.googledomains.com
-ns-cloud-b4.googledomains.com
-```
-
-Enregistrement actuel : `dernierecouche.com. A 185.158.133.1` — l'adresse
-de l'hébergement Lovable. Le domaine n'a **aucun enregistrement MX** : rien
-ne peut recevoir d'email à `@dernierecouche.com` aujourd'hui.
-
-## La bascule à faire
-
-Dans la zone Google Cloud DNS, remplacer l'enregistrement A par les quatre
-adresses de GitHub Pages :
-
-```
-dernierecouche.com.   A   185.199.108.153
-dernierecouche.com.   A   185.199.109.153
-dernierecouche.com.   A   185.199.110.153
-dernierecouche.com.   A   185.199.111.153
-```
-
-En IPv6, si la zone le gère :
-
-```
-dernierecouche.com.   AAAA   2606:50c0:8000::153
-dernierecouche.com.   AAAA   2606:50c0:8001::153
-dernierecouche.com.   AAAA   2606:50c0:8002::153
-dernierecouche.com.   AAAA   2606:50c0:8003::153
-```
-
-Et pour le sous-domaine www :
-
-```
+dernierecouche.com.       A       185.199.108.153
+dernierecouche.com.       A       185.199.109.153
+dernierecouche.com.       A       185.199.110.153
+dernierecouche.com.       A       185.199.111.153
 www.dernierecouche.com.   CNAME   bringme5guys.github.io.
 ```
 
-Le fichier [public/CNAME](../public/CNAME) déclare déjà le domaine côté
-GitHub. Une fois le DNS propagé, GitHub émet automatiquement le certificat
-Let's Encrypt ; cocher ensuite « Enforce HTTPS » dans les réglages Pages du
-dépôt.
+Préréglages conservés intacts : « Squarespace Domain Connect » et
+« Email Security ».
 
 ## À ne pas casser en modifiant la zone
 
@@ -81,7 +59,6 @@ créer.
    (`gpt-engineer-app`) a poussé sur `main` pendant la reprise et
    réintroduit sa tuyauterie d'aperçu, qu'il a fallu retirer. Tant que la
    connexion existe, il recommencera.
-2. **Poser la bascule DNS** ci-dessus.
 3. **Poser le secret Resend** pour que les demandes de devis parviennent
    par email :
    `supabase secrets set RESEND_API_KEY=... --project-ref bnxadaigzktyjeylbzks`

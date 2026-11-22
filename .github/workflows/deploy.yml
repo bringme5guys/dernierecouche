@@ -29,11 +29,8 @@ jobs:
 
       - run: npm run build
 
-      # GitHub Pages ne sait pas réécrire les URL côté serveur.
-      # Servir index.html en 404 fait retomber toute URL inconnue sur
-      # l'application, qui affiche alors la bonne page.
-      - name: Repli pour les URL de l'application
-        run: cp dist/index.html dist/404.html
+      # Le build prérend chaque route dans son propre fichier HTML,
+      # dist/404.html compris : GitHub Pages le sert pour toute URL inconnue.
 
       - uses: actions/upload-pages-artifact@v3
         with:

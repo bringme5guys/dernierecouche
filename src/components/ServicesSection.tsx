@@ -6,6 +6,8 @@ import {
   ShieldCheck,
   Trash2,
 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
@@ -86,6 +88,16 @@ const ServicesSection = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            to="/services/nettoyage-fin-de-chantier"
+            className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all"
+          >
+            Tout savoir sur le nettoyage de fin de chantier
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </div>
     </section>

@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Seo from "@/components/Seo";
 import { site, localBusinessJsonLd } from "@/config/site";
 import Header from "@/components/Header";
@@ -13,6 +15,16 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  const { hash } = useLocation();
+
+  // Arrivée depuis une autre page avec une ancre : on rejoint la section.
+  useEffect(() => {
+    if (!hash) return;
+    document
+      .getElementById(hash.slice(1))
+      ?.scrollIntoView({ behavior: "smooth" });
+  }, [hash]);
+
   return (
     <>
       <Seo

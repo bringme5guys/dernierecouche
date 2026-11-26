@@ -1,15 +1,24 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { site } from "@/config/site";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
+  /**
+   * Les entrées du menu visent des sections de l'accueil. Depuis une autre
+   * page, la section n'existe pas : on renvoie alors vers l'accueil avec
+   * l'ancre, et c'est Index qui fait défiler jusqu'à elle.
+   */
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate(`/#${id}`);
     }
     setIsMenuOpen(false);
   };

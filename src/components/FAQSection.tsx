@@ -7,9 +7,9 @@ import {
 
 const faqs = [
   {
-    question: "Quand intervenir pour un nettoyage de fin de chantier ?",
+    question: "Sur quels types de locaux intervenez-vous ?",
     answer:
-      "Nous intervenons une fois que tous les travaux sont terminés : peinture sèche, sols posés, sanitaires installés. C'est la dernière étape avant la livraison ou l'emménagement. Idéalement, prévoyez notre intervention 2 à 3 jours avant la date de remise des clés.",
+      "Chantiers de construction et de rénovation, parties communes d'immeubles, bureaux et locaux commerciaux, entrepôts et locaux industriels, ainsi que les logements nécessitant une remise en état lourde. Si votre besoin ne rentre dans aucune case, décrivez-le : nous vous dirons franchement si c'est notre métier.",
   },
   {
     question: "Comment est calculé le prix d'une prestation ?",
@@ -17,9 +17,9 @@ const faqs = [
       "Le tarif dépend de plusieurs facteurs : la surface à nettoyer, le type de chantier (neuf ou rénovation), l'état de propreté initial et les prestations demandées. Nous réalisons un devis gratuit après visite ou sur photos pour vous proposer un prix juste et transparent.",
   },
   {
-    question: "Combien de temps dure une intervention ?",
+    question: "Proposez-vous des contrats d'entretien régulier ?",
     answer:
-      "La durée varie selon la surface et l'état du chantier. En moyenne, comptez une journée pour un appartement de 60 à 80m², et 2 à 3 jours pour une maison individuelle. Nous adaptons notre équipe pour respecter vos délais.",
+      "Oui. Pour les parties communes, les bureaux et les sites industriels, nous travaillons au contrat annuel avec une fréquence définie ensemble. Le passage ponctuel reste possible, mais sur ces métiers la régularité coûte moins cher qu'un rattrapage.",
   },
   {
     question: "Quels produits et équipements utilisez-vous ?",
@@ -51,8 +51,8 @@ const FAQSection = () => {
             Questions fréquentes
           </h2>
           <p className="text-muted-foreground text-lg">
-            Tout ce que vous devez savoir sur nos prestations de nettoyage de
-            fin de chantier.
+            Ce que l'on nous demande le plus souvent avant de travailler
+            ensemble.
           </p>
         </div>
 

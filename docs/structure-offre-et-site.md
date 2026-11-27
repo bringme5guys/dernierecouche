@@ -103,12 +103,17 @@ Chaque article vise une question réelle et pointe vers sa page de service.
 | Nettoyer un entrepôt sans arrêter l'exploitation | entrepôts |
 | Sols industriels : décaper, lustrer ou métalliser | entrepôts |
 
-## Ordre d'exécution proposé
+## Ordre d'exécution
 
-1. Prérendu des pages (préalable technique)
-2. Page fin de chantier, refondue depuis l'accueil actuel
-3. Page parties communes et syndic
-4. Page nettoyages complexes, en exploitant les photos existantes
-5. Chantier, puis entrepôts
-6. Page locale Lille
-7. Blog, deux articles par métier
+1. ~~Prérendu des pages~~ — fait
+2. ~~Page fin de chantier~~ — en ligne sur
+   `/services/nettoyage-fin-de-chantier`
+3. ~~Accueil repositionné au niveau de la société~~ — les cinq métiers
+   sont définis dans `src/config/site.ts` et alimentent l'accueil, le pied
+   de page et les données structurées. Une carte renvoie vers sa page quand
+   elle existe, et reste sans lien sinon.
+4. Page parties communes et syndic
+5. Page nettoyages complexes, en exploitant les photos existantes
+6. Chantier, puis entrepôts
+7. Page locale Lille
+8. Blog, deux articles par métier

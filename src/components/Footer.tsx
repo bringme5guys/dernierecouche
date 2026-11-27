@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin } from "lucide-react";
-import { site } from "@/config/site";
+import { Link } from "react-router-dom";
+import { site, metiers } from "@/config/site";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -19,9 +20,9 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-display font-bold mb-4">Dernière Couche</h3>
             <p className="text-white/70 mb-6 max-w-md">
-              Spécialiste du nettoyage de fin de chantier à Lille et dans toute
-              la métropole lilloise. Professionnalisme, rigueur et satisfaction
-              client.
+              Société de nettoyage pour les professionnels, à Lille et dans
+              tout le Nord. Du chantier à l'entrepôt, des parties communes aux
+              interventions les plus lourdes.
             </p>
             <div className="space-y-3">
               <a
@@ -40,7 +41,7 @@ const Footer = () => {
               </a>
               <div className="flex items-center gap-3 text-white/70">
                 <MapPin className="w-4 h-4" />
-                <span>Lille et métropole lilloise</span>
+                <span>{site.area.label}</span>
               </div>
             </div>
           </div>
@@ -71,14 +72,22 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold mb-4">Nos services</h4>
+            <h4 className="font-semibold mb-4">Nos métiers</h4>
             <ul className="space-y-2 text-white/70">
-              <li>Nettoyage fin de chantier</li>
-              <li>Dépoussiérage complet</li>
-              <li>Nettoyage des sols</li>
-              <li>Vitres et menuiseries</li>
-              <li>Désinfection</li>
-              <li>Évacuation déchets</li>
+              {metiers.map((metier) =>
+                metier.path ? (
+                  <li key={metier.slug}>
+                    <Link
+                      to={metier.path}
+                      className="hover:text-white transition-colors"
+                    >
+                      {metier.title}
+                    </Link>
+                  </li>
+                ) : (
+                  <li key={metier.slug}>{metier.title}</li>
+                )
+              )}
             </ul>
           </div>
         </div>

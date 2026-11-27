@@ -28,7 +28,7 @@ const Index = () => {
   return (
     <>
       <Seo
-        title={`Nettoyage de fin de chantier à Lille | ${site.name}`}
+        title={`Société de nettoyage à Lille et dans le Nord | ${site.name}`}
         description={site.description}
         path="/"
         jsonLd={localBusinessJsonLd}

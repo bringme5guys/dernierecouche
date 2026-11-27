@@ -34,12 +34,13 @@ const CoverageSection = () => {
               Zone d'intervention
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">
-              Lille et toute la métropole lilloise
+              Lille, la métropole et tout le Nord
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Nous intervenons sur l'ensemble de la Métropole Européenne de
-              Lille (MEL). Notre équipe se déplace rapidement pour répondre à
-              vos besoins de nettoyage de fin de chantier.
+              Notre terrain quotidien est la Métropole Européenne de Lille,
+              et nous intervenons dans tout le département du Nord. Pour un
+              site situé au-delà, demandez-nous : selon le volume et la date,
+              le déplacement se justifie souvent.
             </p>
 
             {/* Cities Grid */}

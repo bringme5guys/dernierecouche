@@ -7,7 +7,9 @@ import { Label } from "@/components/ui/label";
 import {
   Select,
   SelectContent,
+  SelectGroup,
   SelectItem,
+  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
@@ -152,7 +154,7 @@ const ContactSection = () => {
                   <div>
                     <p className="font-medium text-foreground">Zone d'intervention</p>
                     <p className="text-muted-foreground">
-                      Lille et métropole lilloise
+                      {site.area.label}
                     </p>
                   </div>
                 </div>
@@ -235,23 +237,39 @@ const ContactSection = () => {
                       <SelectValue placeholder="Sélectionnez" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="construction">Construction neuve</SelectItem>
-                      <SelectItem value="renovation-complete">Rénovation complète</SelectItem>
-                      <SelectItem value="renovation-partielle">Rénovation partielle</SelectItem>
-                      <SelectItem value="extension">Extension / Agrandissement</SelectItem>
-                      <SelectItem value="amenagement-combles">Aménagement de combles</SelectItem>
-                      <SelectItem value="amenagement-interieur">Aménagement intérieur</SelectItem>
-                      <SelectItem value="salle-de-bain">Salle de bain / Sanitaires</SelectItem>
-                      <SelectItem value="cuisine">Cuisine</SelectItem>
-                      <SelectItem value="cloisons-plafonds">Cloisons / Faux plafonds</SelectItem>
-                      <SelectItem value="isolation">Isolation thermique / acoustique</SelectItem>
-                      <SelectItem value="peinture-finitions">Peinture / Finitions</SelectItem>
-                      <SelectItem value="carrelage-revetement">Carrelage / Revêtement sols</SelectItem>
-                      <SelectItem value="electricite">Électricité</SelectItem>
-                      <SelectItem value="plomberie">Plomberie</SelectItem>
-                      <SelectItem value="menuiserie">Menuiserie intérieure</SelectItem>
-                      <SelectItem value="local-commercial">Local commercial / Bureau</SelectItem>
-                      <SelectItem value="autre">Autre projet</SelectItem>
+                      <SelectGroup>
+                        <SelectLabel>Chantier et travaux</SelectLabel>
+                        <SelectItem value="construction">Construction neuve</SelectItem>
+                        <SelectItem value="renovation-complete">Rénovation complète</SelectItem>
+                        <SelectItem value="renovation-partielle">Rénovation partielle</SelectItem>
+                        <SelectItem value="extension">Extension / Agrandissement</SelectItem>
+                        <SelectItem value="amenagement-combles">Aménagement de combles</SelectItem>
+                        <SelectItem value="amenagement-interieur">Aménagement intérieur</SelectItem>
+                        <SelectItem value="salle-de-bain">Salle de bain / Sanitaires</SelectItem>
+                        <SelectItem value="cuisine">Cuisine</SelectItem>
+                        <SelectItem value="cloisons-plafonds">Cloisons / Faux plafonds</SelectItem>
+                        <SelectItem value="isolation">Isolation thermique / acoustique</SelectItem>
+                        <SelectItem value="peinture-finitions">Peinture / Finitions</SelectItem>
+                        <SelectItem value="carrelage-revetement">Carrelage / Revêtement sols</SelectItem>
+                        <SelectItem value="electricite">Électricité</SelectItem>
+                        <SelectItem value="plomberie">Plomberie</SelectItem>
+                        <SelectItem value="menuiserie">Menuiserie intérieure</SelectItem>
+                        <SelectItem value="local-commercial">Local commercial / Bureau</SelectItem>
+                      </SelectGroup>
+
+                      <SelectGroup>
+                        <SelectLabel>Nos autres métiers</SelectLabel>
+                        <SelectItem value="parties-communes">
+                          Parties communes / Syndic
+                        </SelectItem>
+                        <SelectItem value="nettoyage-complexe">
+                          Nettoyage complexe (insalubrité, sinistre)
+                        </SelectItem>
+                        <SelectItem value="entrepot-industriel">
+                          Entrepôt / Local industriel
+                        </SelectItem>
+                        <SelectItem value="autre">Autre demande</SelectItem>
+                      </SelectGroup>
                     </SelectContent>
                   </Select>
                 </div>

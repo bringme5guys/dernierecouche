@@ -9,7 +9,8 @@ const features = [
   {
     icon: Award,
     title: "Expertise spécialisée",
-    description: "Spécialistes exclusifs du nettoyage de fin de chantier depuis des années.",
+    description:
+      "Une méthode et un matériel par métier. On n'envoie pas la même équipe sur un chantier et dans un entrepôt.",
   },
   {
     icon: Wrench,

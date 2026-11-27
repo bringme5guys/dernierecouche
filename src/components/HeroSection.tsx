@@ -1,5 +1,6 @@
 import { ArrowDown, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { site } from "@/config/site";
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -37,25 +38,26 @@ const HeroSection = () => {
         />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 pb-20">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm mb-8 animate-fade-in opacity-0" style={{ animationDelay: "0.1s" }}>
             <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
-            Spécialistes du nettoyage de fin de chantier
+            Nettoyage professionnel pour les entreprises
           </div>
 
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight mb-6 animate-fade-in opacity-0" style={{ animationDelay: "0.2s" }}>
-            Nettoyage professionnel
+            Société de nettoyage
             <br />
-            <span className="text-teal">de fin de chantier</span>
+            <span className="text-teal">pour les professionnels</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-8 animate-fade-in opacity-0" style={{ animationDelay: "0.3s" }}>
-            Votre chantier livré impeccable. Nous intervenons après vos travaux
-            pour un nettoyage complet et minutieux, prêt à être livré ou habité.
+            Du chantier à la livraison, des parties communes à l'entrepôt.
+            Nous intervenons à Lille et dans tout le Nord pour les entreprises,
+            les syndics et les maîtres d'ouvrage.
           </p>
 
           {/* Highlights */}
@@ -92,7 +94,7 @@ const HeroSection = () => {
 
           {/* Location */}
           <p className="text-white/60 text-sm mt-10 animate-fade-in opacity-0" style={{ animationDelay: "0.6s" }}>
-            Lille et toute la métropole lilloise
+            {site.area.label}
           </p>
         </div>
       </div>
